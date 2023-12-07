@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreMLDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="Kis-hR-AEc">
+                                <rect key="frame" x="53" y="240" width="279" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="hPL-UP-80Y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Machine Learning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKm-Jf-ZpH">
+                                <rect key="frame" x="65" y="78" width="246" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="a4p-g5-hnG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-fL-wPb">
+                                <rect key="frame" x="53" y="611" width="279" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="PDS-ep-Vc6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kis-hR-AEc" firstAttribute="trailing" secondItem="aAw-fL-wPb" secondAttribute="trailing" id="2f9-mW-Y9s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NKm-Jf-ZpH" secondAttribute="trailing" constant="82" id="6Vn-aL-WKV"/>
+                            <constraint firstItem="Kis-hR-AEc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="240" id="8EG-kn-vRa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aAw-fL-wPb" secondAttribute="bottom" constant="139" id="FTT-59-Esg"/>
+                            <constraint firstItem="NKm-Jf-ZpH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="OdZ-Mk-SAS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kis-hR-AEc" secondAttribute="trailing" constant="61" id="TRy-PC-a3u"/>
+                            <constraint firstItem="NKm-Jf-ZpH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="aLn-ad-PBl"/>
+                            <constraint firstItem="Kis-hR-AEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="y3G-IC-XbC"/>
+                            <constraint firstItem="Kis-hR-AEc" firstAttribute="leading" secondItem="aAw-fL-wPb" secondAttribute="leading" id="zW1-JP-GCT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foundLabel" destination="aAw-fL-wPb" id="K7L-SF-2Fx"/>
+                        <outlet property="mainImage" destination="Kis-hR-AEc" id="U3Q-BW-4iI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pizza" width="2560" height="1600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
